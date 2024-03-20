@@ -65,6 +65,14 @@
             background-color: white;
             color: white;
         }
+
+        @media screen and (max-width:667px) {
+            .section-p{
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+        }
+    
     </style>
 </head>
 <body class=" bg-slate-50 text-black">
@@ -99,12 +107,12 @@
         <div class="banner relative">
             <div class="banner-image mt-3 relative">
                 <img class="w-full" src="Images/1.png" alt="">
-                <div class="absolute flex gap-4 transform -translate-y-1/2 left-10 right-5 bottom-8">
+                <div class="lg:absolute  flex gap-4 transform  lg:justify-start justify-center -translate-y-1/2 left-10 right-5 bottom-2">
                     <a href="#slide3" class="btn btn-circle">❮</a> 
                     <a href="#slide1" class="btn btn-circle">❯</a>
                   </div>
             </div>
-            <div class="banner-text bg-slate-950 p-6 absolute bottom-16 right-16 text-white rounded-lg">
+            <div class="banner-text bg-slate-950 p-6 mt-5 lg:absolute lg:bottom-16 lg:right-16 text-white rounded-lg">
                 <h2 class="text-2xl">Meet all the heroes from the field</h2>
                 <p class="pt-5 text-sm">Dit amet consectetur. Condimentum dignissim adipiscing aliquambr <br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
@@ -112,29 +120,29 @@
         <hr>
     </header>
 
-    <main class="p-10 hidden">
+    <main class="p-10 ">
         <!-- professional hockey -->
         <section class="">
             <h2 class="section-h2 ">Professional Hockeys Club</h2>
             <p class="section-p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             <hr>
-            <div class="flex my-9 justify-evenly">
-                <div class="text-center">
+            <div class="lg:flex lg:flex-row my-9 justify-evenly flex-col">
+                <div class="text-center hockey-feature">
                     <div class="radial-progress text-error" style="--value:89;" role="progressbar">89%</div>
                     <h4 class="text-xl font-semibold py-2">Prayer Facility</h4>
                     <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center hockey-feature">
                     <div class="radial-progress text-accent" style="--value:95;" role="progressbar">95%</div>
                     <h4 class="text-xl font-semibold py-2">Experienced Coach</h4>
                     <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center hockey-feature">
                     <div class="radial-progress text-warning" style="--value:90;" role="progressbar">90%</div>
                     <h4 class="text-xl font-semibold py-2">Senior Player</h4>
                     <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center hockey-feature">
                     <div class="radial-progress text-info font-bold" style="--value:80; " role="progressbar">80%</div>
                     <h4 class="text-xl font-semibold py-2">Training Ground</h4>
                     <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
@@ -148,7 +156,7 @@
             <h2 class="section-h2">Program Sections</h2>
             <p class="section-p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             <hr>
-            <div class="flex gap-10 text-white pt-10">
+            <div class="flex flex-col lg:flex-row  gap-10 text-white pt-10">
                 <div class="bg-image-1 h-80 w-full rounded-lg relative">
                   
                     <div class="text-left p-5 pt-20">
@@ -184,13 +192,13 @@
             <h2 class="section-h2">Our New Products</h2>
             <p class="section-p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
             <hr>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="flex border-2 border-gray border-solid p-5 rounded-xl">
+            <div class="grid  lg:grid-cols-2 gap-4">
+                <div class="flex  border-2 border-gray border-solid p-5 rounded-xl">
                     <div>
                         <img src="Images/5.png" alt="">
                     </div>
                     <div class="pl-5">
-                        <div class="flex gap-6  ">
+                        <div class="flex   gap-6  ">
                             <div  class="flex text-center items-center gap-2">
                                 <i class="fa-solid fa-star text-warning"></i>
                                 <p>5.0</p>
@@ -374,15 +382,16 @@
                
 
 
-            <hr>
+            
         </section>
+        <hr>
 
         <!-- Clients Question -->
         <section>
             <h2 class="section-h2">Clients Question</h2>
             <p class="section-p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
             <hr>
-            <div class="flex">
+            <div class="flex flex-col lg:flex-row">
                 <div class="flex-1 p-5">
                     <img src="Images/11.png" alt="">
                 </div>
@@ -456,7 +465,7 @@
             <h2 class="section-h2">Get In Touch</h2>
             <p class="section-p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             <hr>
-            <div class="flex mt-5">
+            <div class="flex flex-col lg:flex-row mt-5">
                 <div class="flex-2 py-5 border-solid border-gray-100 border-2 px-5">
                     <div class="p-7 mt-5 bg-green-100 rounded-lg">
                         <img src="Images/Group 1171275317.png" alt="">
@@ -468,29 +477,29 @@
                         <p class="py-2">Email : </p>
                         <p>hockeys@support.com</p>
                     </div>
-                    <div class="p-7 mt-5 w-96 bg-blue-100 rounded-lg">
+                    <div class="p-7 mt-5  bg-blue-100 rounded-lg">
                         <img src="Images/Group 1171275321.png" alt="">
                         <p class="py-2">Location : </p>
                         <p>152/1 Mohakhali Wireless Gatea</p>
                     </div>
                 </div>
                 <div class="flex-1">
-                    <div class="grid grid-cols-2 p-6">
+                    <div class="grid lg:grid-cols-2 p-6">
                         <div>
                             <p>Your Name</p>
-                            <input type="text" placeholder="Type Your Name" class="input bg-white mt-2 mb-2  input-bordered w-full max-w-xs" />
+                            <input type="text" placeholder="Type Your Name" class="input bg-white mt-2 mb-2  input-bordered w-full max-w-5xl" />
                         </div>
                         <div>
                             <p>Your Email</p>
-                            <input type="text" placeholder="Type Your Name" class="input bg-white mt-2 mb-2  input-bordered w-full max-w-xs" />
+                            <input type="text" placeholder="Type Your Name" class="input bg-white mt-2 mb-2  input-bordered w-full max-w-5xl" />
                         </div>
                         <div>
                             <p>Your Subject</p>
-                            <input type="text" placeholder="Type Your Name" class="input bg-white mt-2 mb-2 input-bordered w-full max-w-xs" />
+                            <input type="text" placeholder="Type Your Name" class="input bg-white mt-2 mb-2 input-bordered w-full max-w-5xl" />
                         </div>
                         <div>
                             <p>Phone Number</p>
-                            <input type="text" placeholder="Type Your Name" class="input bg-white mt-2 mb-2 input-bordered w-full max-w-xs" />
+                            <input type="text" placeholder="Type Your Name" class="input bg-white mt-2 mb-2 input-bordered w-full max-w-5xl" />
                         </div>
                     </div>
                     <div class="p-6">
@@ -519,7 +528,7 @@
         <hr>
     </main>
 
-    <footer class="footer py-20 px-32 bg-base-200 text-base-content text-white hidden">
+    <footer class="footer py-20 px-32 bg-base-200 text-base-content text-white ">
         <aside>
           <p class="text-2xl font-bold">Get In Touch</p>
           <p class="py-4">Dit amet consectetur. Condimentum <br>  adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin. </p>
@@ -532,21 +541,23 @@
             <p>(+62) 123-321-543</p>
           </div>
         </aside> 
-        <nav class="flex flex-col gap-7">
-          <h6 class="footer-title">Services</h6> 
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
-        </nav> 
-        <nav class="flex flex-col gap-7">
-          <h6 class="footer-title">Company</h6> 
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </nav> 
-        <nav class="flex flex-col gap-7">
+        <div class="flex lg:flex-row gap-40">
+            <nav class="flex flex-col gap-7">
+                <h6 class="footer-title">Services</h6> 
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+              </nav> 
+              <nav class="flex flex-col gap-7">
+                <h6 class="footer-title">Company</h6> 
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+              </nav> 
+        </div>
+        <nav class="flex flex-col gap-7 ">
           <h6 class="footer-title">Legal</h6> 
           <a class="link link-hover">Terms of use</a>
           <a class="link link-hover">Privacy policy</a>
